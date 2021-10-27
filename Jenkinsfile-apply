@@ -19,7 +19,7 @@ pipeline {
     }
     stage ('Apply resources') {
       when {
-        //FIX-ME
+        sh 'oc apply -k samples'
       }
       steps {
         //FIX-ME
